@@ -11,5 +11,5 @@ class CustomerSerializer(serializers.ModelSerializer):
             'gender',
             'age',
             'favorite_number',
-            'created'
+            'created_at'
         )
