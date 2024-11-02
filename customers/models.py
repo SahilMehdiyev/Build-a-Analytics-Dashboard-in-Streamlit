@@ -7,7 +7,7 @@ class Customer(models.Model):
     gender = models.CharField(choices=GENDER_CHOICES, max_length=1)
     age = models.PositiveSmallIntegerField()
     favorite_number = models.PositiveSmallIntegerField()
-    created_at = models.DateField(auto_now_add=True)
+    created = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return f'{self.name} id:{self.id}'
