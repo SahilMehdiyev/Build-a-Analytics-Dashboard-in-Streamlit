@@ -7,8 +7,12 @@ class GenderChoiceFieldSerializer(serializers.Field):
     def to_representation(self,obj):
         return dict(GENDER_CHOICES)[obj]
     
-    def to_interval_value(self,data):
-        return data
+    def to_internal_value(self, data):
+        for key, value in GENDER_CHOICES:
+            if value == data:
+                return key
+        raise serializers.ValidationError("Invalid gender choice.")
+
 
 
 class CustomerSerializer(serializers.ModelSerializer):
