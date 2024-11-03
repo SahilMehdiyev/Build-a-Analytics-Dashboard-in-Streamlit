@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'drf_api_logger',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     
     'customers',
 ]
+
+DRF_API_LOGGER_DATABASE = True  # Save logs in database
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
