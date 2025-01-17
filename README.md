@@ -17,7 +17,7 @@ This project provides an intuitive interface for analyzing and managing customer
 
 ---
 
-## Installation
+## Installation!
 
 Follow these steps to set up the project environment, install packages, and start the server.
 
